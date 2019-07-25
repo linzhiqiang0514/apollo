@@ -16,6 +16,6 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @EnableEurekaClient
-@ConditionalOnProperty(name = "apollo.eureka.client.enabled", havingValue = "true", matchIfMissing = false)
+@ConditionalOnProperty(name = "apollo.eureka.client.enabled", havingValue = "true", matchIfMissing = true)
 public class ConfigServerEurekaClientConfigure {
 }
